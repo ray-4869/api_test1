@@ -11,11 +11,10 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route index element={<Main />}></Route>
+        <Route index element={<Toonlist />}></Route>
         <Route path="/auth/login" element={<Login />}></Route>
         <Route path="/article/list" element={<ArticleList />}></Route>
         <Route path="/myprofil" element={<Profils />}></Route>
-        <Route path="/toonfic" element={<Toonlist />}></Route>
       </Routes>
     </BrowserRouter>
   )
