@@ -3,8 +3,9 @@ import Main from "./pages/Main"
 import Login from "./pages/Login"
 import ArticleList from "./pages/ArticleList"
 import Nav from "./components/Nav"
-import Profils from "./pages/Profils"
+import ProfileHome from "./pages/ProfileHome"
 import Toonlist from "./pages/toonlist"
+import ProfileModify from "./pages/ProfileModify"
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route index element={<Toonlist />}></Route>
         <Route path="/auth/login" element={<Login />}></Route>
         <Route path="/article/list" element={<ArticleList />}></Route>
-        <Route path="/myprofil" element={<Profils />}></Route>
+        <Route path="/myprofile" element={<ProfileHome />}></Route>
+        <Route path="/myprofile/modify" element={<ProfileModify />}></Route>
       </Routes>
     </BrowserRouter>
   )

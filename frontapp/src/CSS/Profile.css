@@ -13,21 +13,26 @@
   z-index: 800; /* 다른 요소들 위에 보이도록 설정 */
 }
 
-.sidebar-item {
+.profile-link {
+  text-decoration: none !important;
+}
+
+.sidebar-item a {
   display: flex;
-  margin-bottom: 30px; /* 각 항목 사이의 간격 */
+  margin-bottom: 10px; /* 각 항목 사이의 간격 */
   cursor: pointer;
-  color: #000000;
+  color: #000000 !important;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: -0.408px;
+  text-decoration: none !important;
 }
 
 .sidebar-item:hover {
-  color: #414141; /* 항목에 마우스를 올렸을 때 색상 변경 */
+  color: #414141 !important; /* 항목에 마우스를 올렸을 때 색상 변경 */
 }
 
 .sidebar-icon {
@@ -36,9 +41,31 @@
 }
 
 .sidebar-item:hover .sidebar-icon {
-  color: #414141; /* 호버 시 아이콘 색상 변경 */
+  color: #414141 !important; /* 호버 시 아이콘 색상 변경 */
 }
 
 .sidebar-item:first-child {
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+/* Rectangle */
+.profile-upload-container {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 430px;
+  top: 170px;
+
+  border: 1px solid #000000;
+  border-radius: 70px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.upload-input {
+  display: none;
 }

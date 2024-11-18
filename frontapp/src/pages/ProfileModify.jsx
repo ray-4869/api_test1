@@ -1,9 +1,9 @@
-import React from "react"
-import "../CSS/Profil.css"
+import "../CSS/Profile.css"
 import Nav from "../components/Nav.jsx"
-import { FaHome, FaClipboardList, FaRegEdit, FaRegHeart, FaEnvelope, FaUserFriends } from "react-icons/fa"
+import { FaHome, FaClipboardList, FaRegEdit, FaRegHeart, FaEnvelope, FaUserFriends, FaUserEdit } from "react-icons/fa"
+import React, { useState } from "react"
 
-function ProfileHome() {
+function ProfileModify() {
   return (
     <div className="profile-home-page">
       {/* 상단 바 */}
@@ -42,9 +42,13 @@ function ProfileHome() {
           <FaUserFriends className="sidebar-icon" />
           <span>작가 제안</span>
         </div>
+        <div className="sidebar-item">
+          <FaUserEdit className="sidebar-icon" />
+          <span>정보 수정</span>
+        </div>
       </div>
     </div>
   )
 }
 
-export default ProfileHome
+export default ProfileModify

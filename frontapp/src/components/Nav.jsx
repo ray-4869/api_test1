@@ -22,7 +22,7 @@ function Nav() {
             <Link to="/list">게시판</Link>
           </li>
           <li>
-            <Link to="/myprofil">프로필</Link>
+            <Link to="/myprofile">프로필</Link>
           </li>
           <li>
             <Link to="/auth/login">로그인</Link>
