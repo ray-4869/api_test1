@@ -8,8 +8,12 @@ function Nav() {
     <div className="top-bar">
       <div></div>
       <div className="project-brand">
-        <img src={logo} alt="Logo" className="logo-image" />
-        <div className="project-name">Fiction Place</div>
+        <a href="/">
+          <img src={logo} alt="Logo" className="logo-image" />
+        </a>
+        <div className="project-name">
+          <a href="/">Fiction Place</a>
+        </div>
       </div>
 
       {/* 네비게이션 메뉴 */}
@@ -19,7 +23,7 @@ function Nav() {
             <Link to="/">웹툰</Link>
           </li>
           <li>
-            <Link to="/list">게시판</Link>
+            <Link to="/bordlist">게시판</Link>
           </li>
           <li>
             <Link to="/myprofile">프로필</Link>

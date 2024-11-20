@@ -6,6 +6,7 @@ import Nav from "./components/Nav"
 import ProfileHome from "./pages/ProfileHome"
 import Toonlist from "./pages/toonlist"
 import ProfileModify from "./pages/ProfileModify"
+import BordList from "./pages/BordList"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/article/list" element={<ArticleList />}></Route>
         <Route path="/myprofile" element={<ProfileHome />}></Route>
         <Route path="/myprofile/modify" element={<ProfileModify />}></Route>
+        <Route path="/bordlist" element={<BordList />}></Route>
       </Routes>
     </BrowserRouter>
   )

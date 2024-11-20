@@ -37,7 +37,8 @@ body {
 }
 
 /* 프로젝트 명 */
-.project-name {
+.project-name a {
+  text-decoration: none !important;
   width: auto;
   max-width: 500px;
   height: 36px;
@@ -48,7 +49,7 @@ body {
   font-size: 28px;
   line-height: 36px;
 
-  color: #000000;
+  color: #000000 !important;
 
   flex: none;
   order: 1;

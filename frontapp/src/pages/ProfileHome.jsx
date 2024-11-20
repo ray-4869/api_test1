@@ -6,6 +6,35 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
 function ProfileHome() {
+  //예제데이터 내작품 api구현때 삭제
+  const works = [
+    {
+      id: 1,
+      imageUrl: "https://via.placeholder.com/150",
+      name: "작품 제목 1",
+      mainHome: "https://example.com/work1",
+      totalViews: 1234,
+      likes: 100,
+    },
+    {
+      id: 2,
+      imageUrl: "https://via.placeholder.com/150",
+      name: "작품 제목 2",
+      mainHome: "https://example.com/work2",
+      totalViews: 5678,
+      likes: 200,
+    },
+    {
+      id: 3,
+      imageUrl: "https://via.placeholder.com/150",
+      name: "작품 제목 3",
+      mainHome: "https://example.com/work3",
+      totalViews: 91011,
+      likes: 300,
+    },
+  ]
+
+  //가데이터 끝
   const [image, setImage] = useState(() => {
     // 컴포넌트가 처음 렌더링될 때 로컬 스토리지에서 이미지를 불러옵니다.
     return localStorage.getItem("profileImage") || null
@@ -79,13 +108,20 @@ function ProfileHome() {
           </Link>
         </div>
       </div>
-      <div>
+      <div class="profile_home">
         <div
           className="profile-upload-container"
           style={{ backgroundImage: image ? `url(${image})` : "url(../assets/프로필이미지가데이터.jpg)" }}
           onClick={() => document.getElementById("file-upload").click()}
         >
           <input type="file" accept="image/*" id="file-upload" className="upload-input" onChange={handleImageChange} />
+        </div>
+        <div class="profile_nickname">닉네임 : </div>
+        <div id="profile-nickname">nickname</div>
+        <div class="email">Email :</div>
+        <div id="profile-email">test@email</div>
+        <div class="discription-card">
+          <div class="discription">자기소개</div>
         </div>
       </div>
     </div>
